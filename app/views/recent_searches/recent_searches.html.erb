@@ -1,0 +1,32 @@
+<style>
+  td{
+    padding:5px;
+}
+</style>
+<table>  
+  <% row_counter = 0  %>
+  <% @recent_searches.each do |key, value| %>
+    <% if row_counter == 0 %>
+      <tr>
+      <% end %>
+
+      <td> <%= link_to "#{key}", value %>
+        <% row_counter += 1  %>
+      </td>
+
+      <% if row_counter > 3 %>
+        <% row_counter = 0  %>
+      </tr>
+    <% end %>
+  <% end %>
+</table>
+
+<center>
+  <% unless @page == 1 %>
+    <%= link_to "<< Previous", recent_searches_url(:p => (@page.to_i - 1)), :class => 'nav-previous' %>
+  <% end %>
+
+  
+  <%= link_to "Next >>", recent_searches_url(:p => (@page.to_i + 1)), :class => 'nav-next' %>
+</center>
+

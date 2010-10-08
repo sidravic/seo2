@@ -1,0 +1,250 @@
+
+
+Processing RecentSearchesController#index (for 127.0.0.1 at 2010-10-08 13:00:51) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: recent_searches):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RecentSearchesController#recent_searches (for 127.0.0.1 at 2010-10-08 13:01:22) [GET]
+Rendering template within layouts/application
+Rendering recent_searches/recent_searches
+Completed in 4990ms (View: 297, DB: 0) | 200 OK [http://localhost/recent_searches]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-08 13:01:27) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/browser_check.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RecentSearchesController#recent_searches (for 127.0.0.1 at 2010-10-08 13:14:57) [GET]
+Rendering template within layouts/application
+Rendering recent_searches/recent_searches
+Completed in 4436ms (View: 229, DB: 0) | 200 OK [http://localhost/recent_searches]
+
+
+Processing RecentSearchesController#recent_searches (for 127.0.0.1 at 2010-10-08 13:17:03) [GET]
+Rendering template within layouts/application
+Rendering recent_searches/recent_searches
+Completed in 4692ms (View: 311, DB: 0) | 200 OK [http://localhost/recent_searches]
+
+
+Processing RecentSearchesController#recent_searches (for 127.0.0.1 at 2010-10-08 13:26:28) [GET]
+Rendering template within layouts/application
+Rendering recent_searches/recent_searches
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.>) on line #25 of app/views/recent_searches/recent_searches.html.erb:
+22: </table>
+23: 
+24: <div class="navigation">
+25:   <% if @page > 1 %>
+26:     <%= link_to "<< Previous", recent_searches_url(:p => (@page - 1)), :class => 'nav-previous' %>
+27:   <% end %>
+28: 
+
+    app/views/recent_searches/recent_searches.html.erb:25
+
+Rendered rescues/_trace (29.3ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecentSearchesController#recent_searches (for 127.0.0.1 at 2010-10-08 13:27:53) [GET]
+Rendering template within layouts/application
+Rendering recent_searches/recent_searches
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.>) on line #25 of app/views/recent_searches/recent_searches.html.erb:
+22: </table>
+23: 
+24: <div class="navigation">
+25:   <% unless (defined?(@page) || @page > 1) %>
+26:     <%= link_to "<< Previous", recent_searches_url(:p => (@page - 1)), :class => 'nav-previous' %>
+27:   <% end %>
+28: 
+
+    app/views/recent_searches/recent_searches.html.erb:25
+
+Rendered rescues/_trace (114.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecentSearchesController#recent_searches (for 127.0.0.1 at 2010-10-08 13:28:48) [GET]
+Rendering template within layouts/application
+Rendering recent_searches/recent_searches
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.-) on line #26 of app/views/recent_searches/recent_searches.html.erb:
+23: 
+24: <div class="navigation">
+25:   <% if @page.nil? || @page == 1 %>
+26:     <%= link_to "<< Previous", recent_searches_url(:p => (@page - 1)), :class => 'nav-previous' %>
+27:   <% end %>
+28: 
+29:   <%= link_to "<< Previous", recent_searches_url(:p => (@page + 1)), :class => 'nav-next' %>
+
+    app/views/recent_searches/recent_searches.html.erb:26
+
+Rendered rescues/_trace (39.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecentSearchesController#recent_searches (for 127.0.0.1 at 2010-10-08 13:29:13) [GET]
+Rendering template within layouts/application
+Rendering recent_searches/recent_searches
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+) on line #29 of app/views/recent_searches/recent_searches.html.erb:
+26:     <%= link_to "<< Previous", recent_searches_url(:p => (@page - 1)), :class => 'nav-previous' %>
+27:   <% end %>
+28: 
+29:   <%= link_to "<< Previous", recent_searches_url(:p => (@page + 1)), :class => 'nav-next' %>
+30: </div>
+
+    app/views/recent_searches/recent_searches.html.erb:29
+
+Rendered rescues/_trace (116.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecentSearchesController#recent_searches (for 127.0.0.1 at 2010-10-08 13:30:52) [GET]
+Rendering template within layouts/application
+Rendering recent_searches/recent_searches
+Completed in 4501ms (View: 288, DB: 0) | 200 OK [http://localhost/recent_searches]
+
+
+Processing RecentSearchesController#recent_searches (for 127.0.0.1 at 2010-10-08 13:32:25) [GET]
+
+Timeout::Error (execution expired):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:60:in `rbuf_fill'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/protocol.rb:134:in `rbuf_fill'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/protocol.rb:86:in `read'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:2212:in `read_body_0'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:2173:in `read_body'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:257:in `open_http'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:1053:in `request'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:2136:in `reading_body'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:1052:in `request'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:248:in `open_http'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:543:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:242:in `open_http'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:616:in `buffer_open'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:164:in `open_loop'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:162:in `catch'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:162:in `open_loop'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:132:in `open_uri'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:518:in `open'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:30:in `open'
+  lib/recent_search.rb:10:in `query'
+  lib/recent_search.rb:23:in `recent_search'
+  app/controllers/recent_searches_controller.rb:5:in `recent_searches'
+
+Rendered rescues/_trace (31.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecentSearchesController#recent_searches (for 127.0.0.1 at 2010-10-08 13:33:29) [GET]
+
+OpenURI::HTTPError (502 Bad Gateway):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:277:in `open_http'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:616:in `buffer_open'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:164:in `open_loop'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:162:in `catch'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:162:in `open_loop'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:132:in `open_uri'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:518:in `open'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:30:in `open'
+  lib/recent_search.rb:10:in `query'
+  lib/recent_search.rb:23:in `recent_search'
+  app/controllers/recent_searches_controller.rb:5:in `recent_searches'
+
+Rendered rescues/_trace (26.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecentSearchesController#recent_searches (for 127.0.0.1 at 2010-10-08 13:33:35) [GET]
+Rendering template within layouts/application
+Rendering recent_searches/recent_searches
+Completed in 4200ms (View: 311, DB: 0) | 200 OK [http://localhost/recent_searches]
+
+
+Processing RecentSearchesController#recent_searches (for 127.0.0.1 at 2010-10-08 13:34:14) [GET]
+Rendering template within layouts/application
+Rendering recent_searches/recent_searches
+Completed in 5094ms (View: 292, DB: 0) | 200 OK [http://localhost/recent_searches]
+
+
+Processing RecentSearchesController#recent_searches (for 127.0.0.1 at 2010-10-08 13:34:25) [GET]
+  Parameters: {"p"=>"2"}
+Rendering template within layouts/application
+Rendering recent_searches/recent_searches
+
+ActionView::TemplateError (undefined method `-' for "2":String) on line #26 of app/views/recent_searches/recent_searches.html.erb:
+23: 
+24: <div class="navigation">
+25:   <% unless @page == 1 %>
+26:     <%= link_to "<< Previous", recent_searches_url(:p => (@page - 1)), :class => 'nav-previous' %>
+27:   <% end %>
+28: 
+29:   
+
+    app/views/recent_searches/recent_searches.html.erb:26
+
+Rendered rescues/_trace (29.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecentSearchesController#recent_searches (for 127.0.0.1 at 2010-10-08 13:35:22) [GET]
+  Parameters: {"p"=>"2"}
+
+OpenURI::HTTPError (502 Bad Gateway):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:277:in `open_http'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:616:in `buffer_open'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:164:in `open_loop'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:162:in `catch'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:162:in `open_loop'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:132:in `open_uri'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:518:in `open'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:30:in `open'
+  lib/recent_search.rb:10:in `query'
+  lib/recent_search.rb:23:in `recent_search'
+  app/controllers/recent_searches_controller.rb:5:in `recent_searches'
+
+Rendered rescues/_trace (91.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecentSearchesController#recent_searches (for 127.0.0.1 at 2010-10-08 13:35:25) [GET]
+  Parameters: {"p"=>"2"}
+Rendering template within layouts/application
+Rendering recent_searches/recent_searches
+Completed in 4120ms (View: 307, DB: 0) | 200 OK [http://localhost/recent_searches?p=2]
+
+
+Processing RecentSearchesController#recent_searches (for 127.0.0.1 at 2010-10-08 13:36:07) [GET]
+  Parameters: {"p"=>"3"}
+Rendering template within layouts/application
+Rendering recent_searches/recent_searches
+Completed in 40438ms (View: 299, DB: 0) | 200 OK [http://localhost/recent_searches?p=3]
+
+
+Processing RecentSearchesController#recent_searches (for 127.0.0.1 at 2010-10-08 13:37:16) [GET]
+  Parameters: {"p"=>"3"}
+Rendering template within layouts/application
+Rendering recent_searches/recent_searches
+Completed in 4290ms (View: 302, DB: 0) | 200 OK [http://localhost/recent_searches?p=3]
